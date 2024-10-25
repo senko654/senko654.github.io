@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Айдын Бакберген - Профиль</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            display: flex; 
+        }
+
+        .modal-content {
+            margin: auto;
+            max-width: 90%; 
+            max-height: 90%; 
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 40px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .left-arrow {
+            left: 20px;
+        }
+
+        .right-arrow {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Инфографика и Визуальные Материалы</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile">
+        <div class="profile-left">
+            <img src="C:\Users\User\Desktop\Новая папка/8f2262cd0349a24d9e70bd34d45ecaf2.jpg" alt="Айдын Бакберген" class="member-photo">
+            <h2>Айдын Бакберген</h2>
+            <p>Веб-разработчик</p>
+            <p><strong>Звездность:</strong> ★★★★☆ (4.8)</p>
+            <p><strong>Комментариев:</strong> 220 (1987 оценок)</p>
+        </div>
+        
+        <div class="profile-right">
+            <h3>Подробная информация</h3>
+            <p>Email: aidyyn@example.com</p>
+            <p>WhatsApp: +7 (747) 777-77-77</p>
+            <h4>Работы</h4>
+            <div class="works">
+                <img src="C:\Users\User\Desktop\Новая папка/1411467739dbv7ved.png" alt="Работа 1" class="work-image">
+                <img src="C:\Users\User\Desktop\Новая папка/3.jpg" alt="Работа 2" class="work-image">
+                <img src="C:\Users\User\Desktop\Новая папка/alpin.png" alt="Работа 3" class="work-image">
+            </div>
+            <h4>Комментарии</h4>
+            <div class="comments">
+                <div class="comment">
+                    <img src="C:\Users\User\Desktop\Новая папка/png-transparent-cartoon-moe-significant-other-avatar-biting-donut-cartoon-girl-cartoon-character-comics-hat-thumbnail.png" alt="Аватар" class="comment-avatar">
+                    <p><strong>Пользователь1:</strong> Айдын, вы просто молодец!</p>
+                </div>
+                <div class="comment">
+                    <img src="C:\Users\User\Desktop\Новая папка/prikolnaya-avatarka-dlya-patsanov.jpg" alt="Аватар" class="comment-avatar">
+                    <p><strong>Пользователь2:</strong> Отлично справляетесь с задачами!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <span class="arrow left-arrow" id="prev">&#10094;</span>
+        <img class="modal-content" id="img01">
+        <span class="arrow right-arrow" id="next">&#10095;</span>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Создание Инфографики. Все права защищены.</p>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementsByClassName("work-image");
+        var modalImg = document.getElementById("img01");
+        var span = document.getElementsByClassName("close")[0];
+        var currentIndex = 0;
+
+        
+        function openModal(index) {
+            currentIndex = index;
+            modal.style.display = "flex"; 
+            modalImg.src = img[currentIndex].src;
+        }
+
+        
+        for (let i = 0; i < img.length; i++) {
+            img[i].onclick = function() {
+                openModal(i);
+            }
+        }
+
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        
+        document.getElementById("prev").onclick = function() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : img.length - 1;
+            modalImg.src = img[currentIndex].src;
+        }
+
+        document.getElementById("next").onclick = function() {
+            currentIndex = (currentIndex < img.length - 1) ? currentIndex + 1 : 0;
+            modalImg.src = img[currentIndex].src;
+        }
+    </script>
+</body>
+</html>

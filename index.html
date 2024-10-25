@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инфографика и Визуальные Материалы</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Инфографика и Визуальные Материалы</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Добро пожаловать в мир креативности!</h2>
+        <p>Мы создаем уникальные визуальные материалы, которые помогают донести информацию с точностью и мощью.</p>
+        <a href="services.html" class="cta-button">Узнать больше</a>
+    </section>
+
+    <main>
+        <h2>Наши услуги</h2>
+        
+        
+        <div class="ad-banner">
+            <p>Получите скидку 20% на первую услугу! Воспользуйтесь кодом: <strong>DISCOUNT20</strong></p>
+        </div>
+        
+        <div class="service-list">
+            <div class="service">
+                <h3>Создание инфографики</h3>
+                <p>Создаем уникальные инфографики, которые помогают визуализировать данные и делают их понятными для аудитории.</p>
+                <p><strong>Цена:</strong> 10,000 KZT</p>
+                <a href="services.html" class="service-button">Подробнее</a>
+            </div>
+            <div class="service">
+                <h3>Дизайн презентаций</h3>
+                <p>Разработка профессиональных презентаций, которые помогут вам эффективно донести информацию до вашей аудитории.</p>
+                <p><strong>Цена:</strong> 6,000 KZT</p>
+                <a href="services.html" class="service-button">Подробнее</a>
+            </div>
+            <div class="service">
+                <h3>Обучение по созданию сайтов</h3>
+                <p>Предлагаем курсы по созданию сайтов, где вы сможете научиться разрабатывать свои собственные проекты.</p>
+                <p><strong>Цена:</strong> 15,000 KZT</p>
+                <a href="services.html" class="service-button">Подробнее</a>
+            </div>
+            <div class="service">
+                <h3>Консультации по визуализации данных</h3>
+                <p>Профессиональные консультации по визуализации данных для бизнеса и научных исследований.</p>
+                <p><strong>Цена:</strong> 4,000 KZT</p>
+                <a href="services.html" class="service-button">Подробнее</a>
+            </div>
+        </div>
+
+        <h2>Портфолио</h2>
+        <p>Наши работы говорят сами за себя. Ознакомьтесь с примерами наших проектов:</p>
+        <div class="portfolio-gallery">
+            <img src="C:\Users\User\Desktop\Новая папка/ae3ba3e316a6a9792264d3d575239be4d2d44945.png" alt="Проект 1" class="portfolio-item" onclick="openModal(this)">
+            <img src="C:\Users\User\Desktop\Новая папка/portfolio-web-razrabotchikov_0_o.jpg" alt="Проект 2" class="portfolio-item" onclick="openModal(this)">
+            <img src="C:\Users\User\Desktop\Новая папка/portfolio-42-1.68d8df00c238a10a80c47453af478829.webp" alt="Проект 3" class="portfolio-item" onclick="openModal(this)">
+        </div>
+        
+        <!-- Модальное окно -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+        </div>
+        
+    
+        
+        
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image">
+        </div>
+        
+        </div>
+
+        <h2>Наша команда</h2>
+        <div class="team-list">
+            <div class="team-member">
+                <a href="alihan.html">
+                    <img src="C:\Users\User\Desktop\Новая папка/7ba9abba6f07203a93b82213a61c994d.jpg" alt="Алихан Бустекбаев" class="member-photo">
+                    <h4>Алихан Бустекбаев</h4>
+                    <p><strong>Дизайнер</strong>, стаж: 5 лет</p>
+                    <p>Алихан специализируется на создании уникальных визуальных концепций и дизайне инфографики.</p>
+                </a>
+            </div>
+            <div class="team-member">
+                <a href="aru.html">
+                    <img src="C:\Users\User\Desktop\Новая папка/18cd92495a5cd17b321e7c9f6ac82ae6.jpg" alt="Саматова Аружан" class="member-photo">
+                    <h4>Саматова Аружан</h4>
+                    <p><strong>Специалист по инфографике</strong>, стаж: 3 года</p>
+                    <p>Аружан превращает данные в информативные визуальные истории.</p>
+                </a>
+            </div>
+            <div class="team-member">
+                <a href="aidyyn.html">
+                    <img src="C:\Users\User\Desktop\Новая папка/8f2262cd0349a24d9e70bd34d45ecaf2.jpg" alt="Айдын Бакберген" class="member-photo">
+                    <h4>Айдын Бакберген</h4>
+                    <p><strong>Веб-разработчик</strong>, стаж: 4 года</p>
+                    <p>Айдын разрабатывает и поддерживает веб-приложения, обеспечивая их функциональность.</p>
+                </a>
+            </div>
+        </div>
+
+        <h2>Наши достижения</h2>
+        <p>Мы гордимся тем, что смогли помочь более 500 клиентам по всему миру. Наша команда имеет опыт работы с различными отраслями: от образования до финансов.</p>
+
+        <h2>Почему выбирают нас?</h2>
+        <p>Наша команда состоит из профессионалов, которые имеют опыт работы в киберпанковском дизайне. Мы стремимся к инновациям и креативности в каждом проекте, что позволяет нам быть на шаг впереди.</p>
+
+        <h2>Блог</h2>
+        <p>Следите за нашими последними новостями и советами в области дизайна и визуализации:</p>
+        <ul>
+            <li><a href="blog1.html">5 советов по созданию эффективных инфографик</a></li>
+            <li><a href="blog2.html">Как выбрать правильные цвета для вашего дизайна</a></li>
+            <li><a href="blog3.html">Тренды визуализации данных в 2024 году</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Создание Инфографики. Все права защищены.</p>
+    </footer>
+    <script>
+        function openModal(img) {
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-image");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+        </script>
+        <script>
+            function openModal(img) {
+                const modal = document.getElementById('modal');
+                const modalImg = document.getElementById('modal-img');
+                modal.style.display = 'flex'; 
+                modalImg.src = img.src; 
+            }
+        
+            function closeModal() {
+                const modal = document.getElementById('modal');
+                modal.style.display = 'none'; 
+            }
+        </script>
+        
+        
+</body>
+</html>
