@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #4caf50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #81c784;
+        }
+
+        .hero {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .blog-post {
+            background-color: #1a1a1a;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+
+        .blog-post h3 {
+            margin-top: 0;
+        }
+
+        .blog-post:hover {
+            background-color: rgba(76, 175, 80, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Блог Инфографики</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Добро пожаловать в наш блог!</h2>
+        <p>Следите за новыми идеями, советами и трендами в дизайне и визуализации данных.</p>
+    </section>
+
+    <main>
+        <h2>Последние посты</h2>
+
+        <div class="blog-post">
+            <h3><a href="blog1.html" style="color: #4caf50;">5 советов по созданию эффективных инфографик</a></h3>
+            <p>Научитесь создавать инфографику, которая действительно работает. Мы расскажем, как выбрать правильные цвета, шрифты и композицию.</p>
+            <p><strong>Дата:</strong> 1 октября 2024</p>
+        </div>
+
+        <div class="blog-post">
+            <h3><a href="blog2.html" style="color: #4caf50;">Как выбрать правильные цвета для вашего дизайна</a></h3>
+            <p>Цвета играют ключевую роль в дизайне. Узнайте, как сочетать цвета, чтобы привлечь внимание и создать настроение.</p>
+            <p><strong>Дата:</strong> 15 октября 2024</p>
+        </div>
+
+        <div class="blog-post">
+            <h3><a href="blog3.html" style="color: #4caf50;">Тренды визуализации данных в 2024 году</a></h3>
+            <p>Посмотрите на самые актуальные тренды в визуализации данных, которые помогут вам оставаться на шаг впереди конкурентов.</p>
+            <p><strong>Дата:</strong> 25 октября 2024</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Создание Инфографики. Все права защищены.</p>
+    </footer>
+</body>
+</html>
